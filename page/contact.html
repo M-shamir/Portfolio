@@ -75,26 +75,30 @@
                    
                     <div class="col-md-12">
                       <!--  -->
-                      <form action="">
+                      <form action="https://api.web3forms.com/submit" method="POST">
+                      <input type="hidden" name="access_key" value="b5bf0a45-4169-431c-831c-51c28486cd2a">
                       <div class="mb-3">
                         <label for="exampleFormControlInput1" class="form-label">Name</label>
-                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="name">
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="name" name="name" required> 
                       </div>
                       <div class="mb-3">
                         <label for="exampleFormControlInput1" class="form-label">Email address</label>
-                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" name="email" required>
                       </div>
                       <div class="mb-3">
                         <label for="exampleFormControlInput1" class="form-label">Company/Organization</label>
-                        <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="Your company name">
+                        <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="Your company name" name="cname" required>
                       </div>
                       <div class="mb-3">
                         <label for="exampleFormControlTextarea1" class="form-label">Message</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Type here ......"></textarea>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Type here ......" name="message" required></textarea>
                       </div>
-                      <a class="primary_btn" href="./page/portfolio.html">
-                        <span>Send</span>
-                    </a>
+                      <button type="submit" style="border: none;">
+                        <a class="primary_btn">
+                          <span>Send</span>
+                      </a>
+                      </button>
+                      
                   </form>
                     </div>
                   </div>
